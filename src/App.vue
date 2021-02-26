@@ -156,7 +156,7 @@ export default {
 
 		// Define the upload endpoint based on environment
 		uploadUrl() {
-			return process.env.ENVIRONMENT === 'development' ? 'http://localhost:9000/convert/img' : 'http://192.168.2.159/convertible/convert/img';
+			return process.env.ENVIRONMENT === 'development' ? 'http://localhost:9000/convert/img' : '/convertible/convert/img';
 		},
 
 		// Define the upload query based on user input
