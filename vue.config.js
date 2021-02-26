@@ -1,4 +1,4 @@
 module.exports = {
-  outputDir: '../main/resources/',
-  assetsDir: '../assets/',
+  publicPath: './apps/convertible/dist/',
+  outputDir: '../dist/',
 };
