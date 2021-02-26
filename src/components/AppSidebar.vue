@@ -19,7 +19,7 @@
 					<!-- Single image items -->
 					<div v-for="(image, index) in images" :key="image.url" class="border border-gray-200 rounded my-2">
 						<div class="w-auto block">
-							<img class="w-auto max-h-48 m-auto" :src="image.url" />
+							<img class="w-auto max-h-48 m-auto" :src="image.type !== 'pdf' ? image.url : placeholder" />
 							<small class="block mx-4 my-2">{{image.name}}.{{image.type}}</small>
 						</div>
 						<div class="px-2 py-3 flex justify-between bg-gray-50 bg-opacity-95">
@@ -46,9 +46,12 @@
 </template>
 
 <script>
+import placeholder from '@/assets/img/pdf.png';
+
 export default {
 	data() {
 		return {
+			placeholder,
 			closeHover: false,
 		};
 	},
