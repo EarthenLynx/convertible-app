@@ -1,8 +1,6 @@
 module.exports = {
-  publicPath: './apps/convertible/dist/',
+  publicPath: '/apps/convertible/dist/',
   outputDir: './dist/',
-  build: {
-    assetsPublicPath: '/apps/convertible/dist/',
-    assetsSubDirectory: 'static'
-  }
+  assetsPublicPath: '/apps/convertible/dist/',
+  assetsSubDirectory: 'static',
 };
